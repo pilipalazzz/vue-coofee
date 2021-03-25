@@ -1,0 +1,164 @@
+.detail{
+    .proImg{
+        position: relative;
+        .detail-nav{                       
+            position: absolute;
+            top: 25px;
+            left: 0;
+            width: 100%;
+            padding: 0 15px;
+            .left{
+                width: 22px;
+                height: 22px;
+            }
+            .right{
+                width: 28px;
+                height: 28px;
+                background-color: rgba(29, 29, 29, .2);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+        }
+    };
+    .pro-content{
+        width: 100%;
+        position: absolute;
+        top: 250px;
+        left: 0;
+        background-color: #ffffff;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        padding: 0 20px 45px;
+        .pro-titleBox{
+            position: relative;
+            margin-top: 25px;
+            .pro-title{
+                font-size: 18px;
+                font-weight: bold;
+                letter-spacing: 3px;
+            }
+            .pro-entitle{
+                margin-top: 5px;
+                font-size: 16px;
+                color: #666666;
+            }
+            &>.van-icon{
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            
+        }
+        .rule{
+            font-size: 16px;
+            line-height: 28px;
+            margin-top: 20px;
+            .title{
+                width: 50px;
+            }
+            .selectBox{
+                margin-left: 30px;
+                
+                .select{
+                    height: 28px;
+                    background-color: #6a91ec;
+                    color: #ffffff;
+                    text-align: center;
+                    width: 80px;
+                    border-radius: 15px;
+                    margin-right: 20px;
+                    font-size: 12px;
+                }
+                .active{
+                    background-color: #0c34ba; 
+                }
+            }
+        };
+        .desc{
+            border-top: 1px solid #cccccc;
+            border-bottom: 1px solid #cccccc;
+            padding: 10px 0;
+            margin-top: 20px;
+            .desc-title{
+                font-size: 16px;
+            }
+            font-size: 14px;
+            p{
+                color: #999999;
+                margin-top: 10px;
+            }
+        }
+        .addCount{
+            position: relative;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row-reverse;
+            .addCount-text{
+                position: absolute;
+                left: 0;
+                top: 0;
+                font-size: 16px;
+            }
+            /deep/.van-stepper{
+                display: inline-block;
+            }
+            /deep/.van-stepper--round .van-stepper__plus{
+                background-color:#0c34ba;
+            }
+            /deep/ .van-stepper--round .van-stepper__minus{
+                color: #6a91ec;
+                border-color: #6a91ec;
+            }
+        }
+        .goodsAction{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            font-size: 16px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            background-color: #ffffff;
+            
+            .price{
+                font-size: 18px;
+                color: #0c34ba;
+            }
+            .buy{
+                margin-left: 10px;
+            }
+            .join-bag{
+                margin-left: 93px;
+                height: 30px;
+                line-height: 30px;
+                color: #ffffff;
+                font-size: 14px;
+                background-color: #6a91ec;
+                padding: 0 5px;
+                border-radius: 5px;
+                border: none;
+            }
+            .van-button--primary{
+                border-color: #0c34ba;
+                background-color: #0c34ba;
+            }
+            .van-button{
+                border-radius: 10px;
+            }
+            .van-icon{
+                position: absolute;
+                top: 7px;
+                left: 120px;
+            }
+        }
+    }
+   
+    
+}

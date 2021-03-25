@@ -1,0 +1,115 @@
+.shopbag{
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding-bottom: 120px;
+    /deep/ .van-nav-bar__left{
+       .van-nav-bar__text{
+           color:  #0c34ba;
+       }
+       i{
+           color:  #0c34ba;
+       }
+    }
+    /deep/ .van-nav-bar__right{
+        .van-nav-bar__text{
+           color:  #333333;
+       }
+    }
+    .edit{
+        color:  #0c34ba;
+    }
+    .list-box{
+        padding: 0 10px;
+        .gyg{
+            .van-button--normal{
+                height: 40px;
+            }
+        }
+        .list-item{
+            border-radius: 10px;
+            margin-top: 20px;
+            display: flex;
+            overflow: hidden;
+            .list-item-left{
+                flex: 10%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #ffffff;
+            }
+            .list-item-right{
+                flex: 90%;
+                background-color: #ffffff;
+                display: flex;
+                .img-box{
+                    flex: 25%;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .content{
+                    flex: 75%;
+                    padding: 10px 10px;
+                    .title{
+                        line-height: 16px;
+                        font-size: 16px;
+                        .desc{
+                            font-size: 14px;
+                            margin-left: 15px;
+                            color: #666666;
+                        }
+                    }
+                    .enname{
+                        margin-top: 10px;
+                        color: #666666;
+                    }
+                    .countAndPrice{
+                        margin-top: 10px;
+                        .price{
+                            font-size: 16px;
+                            color: #0c34ba;
+                        }
+                        /deep/.van-stepper--round .van-stepper__plus{
+                            background-color:#0c34ba;
+                        }
+                        /deep/ .van-stepper--round .van-stepper__minus{
+                            color: #6a91ec;
+                            border-color: #6a91ec;
+                        }
+                    }
+                }
+            }
+            
+            
+        }
+        .van-button--normal{
+            height: 100%;
+        }
+        .van-submit-bar{
+            bottom: 49px;
+            .van-submit-bar__price{
+                color: #0c34ba;
+            }
+            /deep/ .van-button--normal{
+                height: 40px;
+            }
+            .van-checkbox__icon--checked .van-icon{
+                background-color: #0c34ba;
+            }
+        }
+        .del{
+            .van-submit-bar__bar{
+                position: relative;
+                .van-checkbox{
+                    position: absolute;
+                    left: 16px;
+                }
+            }
+        }
+       
+    }
+}
